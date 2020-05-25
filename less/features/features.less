@@ -1,0 +1,50 @@
+@import "..//common/common.less";
+@import "..//var/var.less";
+
+.features {
+    text-align: center;
+    }
+.features-items {
+    
+    @media only screen and (min-width: @mobile)  {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.625rem auto;   
+    }
+
+    .features-item {
+        background: @color-white;
+        padding: 0.625rem;
+        border: 0.063rem solid white;
+        box-shadow: 0 0 0.25rem rgba(0,0,0,0.1);
+        margin: 0.625rem auto ;
+        
+        .icon {
+           font-size: 3.125rem;
+        }
+
+         p {
+            color: @color-gray;
+            font-weight: 900;
+        }
+
+         h3 {
+            margin: 0 0 0.313rem 0;
+            font-weight: bold;
+        }
+
+        @media only screen and (min-width: @mobile) and (max-width: @tablet) {
+            margin:  0.625rem 0 0.625rem 0.625rem;
+            flex-basis: calc(100%/2 - 2rem);
+            width: auto;
+            max-width: calc(100%/2 - 2rem) ;
+        }
+
+        @media only screen and (min-width: @tablet)  {
+            margin:  0.625rem 0 0.625rem 0.625rem;
+            flex-basis: calc(100%/4 - 2rem);
+            width: auto;
+            max-width: calc(100%/4 - 2rem);
+        }
+    }
+}

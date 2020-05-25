@@ -1,0 +1,43 @@
+@import "../var/var.less";
+@import "../common/common.less";
+
+.about {
+    background-color: @color-white;
+    align-items: center;
+    padding: 3.125rem;
+    
+    @media only screen and (min-width: @mobile) {
+        display: flex;
+        height: 20rem;
+        margin: 0 0 0 0.625rem;
+
+        img {
+            flex-basis: 20rem;
+
+            .about-details {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    &-details {
+        color: @color-black;
+        font-weight: 900;
+        text-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.07);
+        
+        p{
+            font-size: 0.938rem;
+        }
+        
+        h2 {
+            margin: 0;
+        }
+
+        button {
+            background-color: @color-yellow;
+            border: none;
+            padding: 0.625rem 1.25rem;
+            text-align: center;
+        }
+    }
+}

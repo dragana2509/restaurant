@@ -1,0 +1,80 @@
+@import "../var/var.less";
+@import "../common/common.less";
+
+.main-section {
+    display: flex;
+    @media only screen and (max-width: @mobile) {
+    flex-direction: column; }
+    @media only screen and (min-width: @mobile) {
+        margin: 0.625rem 0 0 0;
+    }
+
+    &-image {
+        @media only screen and (min-width: @mobile) {
+            flex-basis: 48rem;
+            margin: 0.625rem;
+        }
+        display: flex;
+        align-items: center;
+        background-image: url('https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 20rem;
+        background-position: bottom right;
+        padding: 3.125rem;
+
+        &-title {
+            background-color: @color-yellow;
+            margin: 0.938rem 0;
+            padding: 0.313rem;
+            color: @color-black;
+            font-size: 1.875rem;
+        }
+        &-sub-title {
+            background-color: @color-yellow;
+            margin: 0.938rem 0;
+            padding: 0.313rem;
+            color: @color-black;
+        }
+    .main-section-image-main-title {
+        display: flex;
+    }
+}
+    &-prices {
+        @media only screen and (min-width: @mobile) {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    
+        &-item {
+            height: 50%;
+            margin: 0.625rem 0.625rem 0.625rem 0;
+            padding: 3.125rem;
+        }
+    }
+        
+        &-item {
+            background-color: @color-yellow;
+            margin: 0.625rem 0;
+            text-align: center;
+            
+             }
+
+            p {
+                color: @color-black;
+            }
+
+            .price {
+                font-size: 3.75rem;
+                text-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.07);
+                margin: 0;
+                font-weight: lighter;
+                
+            }
+            .name {
+                margin: 0;
+                font-weight: 900;
+                
+            }
+        }
+    }
